@@ -17,8 +17,6 @@ npm install --save @deveodk/vue-seo
 ```js
 import Vue from 'vue'
 import vueSeo from '@deveodk/vue-seo'
-// You need a specific loader for CSS files like https://github.com/webpack/css-loader
-import '@deveodk/vue-seo/dist/@deveodk/vue-seo.css'
 
 Vue.use(vueSeo)
 ```
@@ -35,6 +33,12 @@ Vue.use(vueSeo)
 <link rel="stylesheet" href="https://unpkg.com/@deveodk/vue-seo/dist/@deveodk/vue-seo.css"></link>
 <script src="https://unpkg.com/@deveodk/vue-seo"></script>
 ```
+
+## Important disclaimer
+> Due to the fact that facebook and twitter wont execute javascript when crawling.
+The plugin will not work unless you use some sort of server side rendering.
+Google however defaults to some of facebooks open graph tags.
+
 
 ## Usage
 The api is very similar to the original vue-seo. Every content property is reactive
