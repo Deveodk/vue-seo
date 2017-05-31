@@ -1,51 +1,147 @@
-# `vue-seo`
+# vue-seo
 
-## [Full Documentation](http://guillaumeleclerc.github.io/vue-seo/)
+[![npm](https://img.shields.io/npm/v/@deveodk/vue-seo.svg)](https://www.npmjs.com/package/@deveodk/vue-seo) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
-## Aim
+> Easy way to add seo to any vue based page, works without use of jquery. Based on the original idea by GuillaumeLeclerc/vue-seo
 
-The aim of this Vue plugin is to help you indexing your Vue powered website using all the greatness of Vue. We also want to give shorthands for common tasks that are usually verbose and reduce the readability of your code.
+## Installation
 
+```bash
+npm install --save @deveodk/vue-seo
+```
 
-# Showcase
+## Usage
 
-With this plugin you are able to use this kind of syntax in any component (does not need to be in the head):
+### Bundler (Webpack, Rollup)
 
-### Complex title management
+```js
+import Vue from 'vue'
+import vueSeo from '@deveodk/vue-seo'
+// You need a specific loader for CSS files like https://github.com/webpack/css-loader
+import '@deveodk/vue-seo/dist/@deveodk/vue-seo.css'
+
+Vue.use(vueSeo)
+```
+
+### Browser
 
 ```html
-<seo-title
-  v-if="condition"
-  v-bind:value="myVariable"
-></seo-title>
+<!-- Include after Vue -->
+<!-- Local files -->
+<link rel="stylesheet" href="@deveodk/vue-seo/dist/@deveodk/vue-seo.css"></link>
+<script src="@deveodk/vue-seo/dist/@deveodk/vue-seo.js"></script>
+
+<!-- From CDN -->
+<link rel="stylesheet" href="https://unpkg.com/@deveodk/vue-seo/dist/@deveodk/vue-seo.css"></link>
+<script src="https://unpkg.com/@deveodk/vue-seo"></script>
 ```
 
+## Usage
+The api is very similar to the original vue-seo. Every content property is reactive
 
-### Describe your company
+### Basic
+
 ```html
-<seo-organization
-  url="company.com"
-  logo="http://awsome.image/my.png"
-  name="Awsome company name"
-></seo-organization>
+# Set the title
+<seo-title content="title here"></seo-title>
+```
+```html
+# Set the description
+<seo-description content="description here"></seo-description>
+```
+```html
+# Set the author
+<seo-author content="author link here"></seo-author>
+```
+```html
+# Set the keywords
+<seo-keywords content="keywords list here"></seo-keywords>
+```
+```html
+# set the canoncial link
+<seo-canonical content="canoncial link here"></seo-canonical>
 ```
 
-### Merge policies
+### Open Graph (facebook)
+
+```html
+# Set the title
+<seo-og-title content="title here"></seo-og-title>
 ```
-  <seo-title value="My website"></seo-title>
-  <seo-title v-if="notifications > 0" value="{{notifications}} notif."></seo-title>
+```html
+# Set the description
+<seo-og-description content="description here"></seo-og-description>
+```
+```html
+# Set the site name
+<seo-og-site-name content="site name here"></seo-og-site-name>
+```
+```html
+# Set the image
+<seo-og-image content="image link here"></seo-og-image>
+```
+```html
+# set the see also
+<seo-og-see-also content="see also link here"></seo-og-see-also>
+```
+```html
+# set the url
+<seo-og-url content="set the url"></seo-og-url>
 ```
 
-with a merge policy for title `VueSEO.policies.join(' - ')` and notifications equal to 3. The title will be: 
+### Google+
 
-`My website - 3 notif.`
+```html
+# Set the name
+<seo-google-name content="name here"></seo-google-name>
+```
+```html
+# Set the description
+<seo-google-description content="description here"></seo-google-description>
+```
+```html
+# Set the image
+<seo-google-image content="image link here"></seo-google-image>
+```
 
-__note__: you can define the two `seo-title` components at different places wherever you want.
+### Twitter
 
-If you want to know more about all the other features just browser the documentation.
+```html
+# Set the title
+<seo-twitter-title content="title here"></seo-twitter-title>
+```
+```html
+# Set the description
+<seo-twitter-description content="description here"></seo-twitter-description>
+```
+```html
+# Set the image
+<seo-twitter-image content="image link here"></seo-twitter-image>
+```
+```html
+# Set the card
+<seo-twitter-card content="card description here"></seo-twitter-card>
+```
+```html
+# Set the url
+<seo-twitter-url content="url here"></seo-twitter-url>
+```
+```html
+# Set the image
+<seo-twitter-image content="image link here"></seo-twitter-image>
+```
 
-## Sponsor
+### Custom properties
 
-The development of this plugin is made possible by [Papayapods](http://papayapods.com)
+This provides an easy way to set html tags, there is not included in the standard package
 
+```html
+# Set a custom propery
+<seo-custom tag="meta" :attrName="'name'" :attrValue="'author'" contentName="'content'" content="image link here"></seo-twitter-image>
+```
 
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+#### Made with <3 by deveo
