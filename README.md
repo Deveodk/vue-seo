@@ -1,4 +1,7 @@
-# vue-seo
+# @Deveodk/vue-toastr
+
+<img src="https://cloud.githubusercontent.com/assets/7561792/26655854/e2ec2a7a-465c-11e7-946f-502c046903c0.png" width="100%" />
+
 
 [![npm](https://img.shields.io/npm/v/@deveodk/vue-seo.svg)](https://www.npmjs.com/package/@deveodk/vue-seo) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
@@ -148,4 +151,4 @@ This provides an easy way to set html tags, there is not included in the standar
 
 [MIT](http://opensource.org/licenses/MIT)
 
-#### Made with <3 by deveo
+![madewithloveandcofee](https://cloud.githubusercontent.com/assets/7561792/26640815/14beb45c-4629-11e7-89db-fbca538a6be5.png)
