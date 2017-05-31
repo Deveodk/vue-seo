@@ -20,36 +20,34 @@ import seoTwitterImage from './components/twitter/image.vue'
 import seoTwitterUrl from './components/twitter/url.vue'
 
 function plugin (Vue, options = {}) {
-
-    Vue.component('seo-title', seoTitle)
-    Vue.component('seo-description', seoDescription)
-    Vue.component('seo-author', seoAuthor)
-    Vue.component('seo-keywords', seoKeywords)
-    Vue.component('seo-canonical', seoCanonical)
+  Vue.component('seo-title', seoTitle)
+  Vue.component('seo-description', seoDescription)
+  Vue.component('seo-author', seoAuthor)
+  Vue.component('seo-keywords', seoKeywords)
+  Vue.component('seo-canonical', seoCanonical)
 
     // Open graph
-    Vue.component('seo-og-title', seoFacebookTitle)
-    Vue.component('seo-og-description', seoFacebookDescription)
-    Vue.component('seo-og-site-name', seoFacebookSiteName)
-    Vue.component('seo-og-image', seoFacebookImage)
-    Vue.component('seo-og-see-also', seoFacebookSeeAlso)
-    Vue.component('seo-og-url', seoFacebookUrl)
+  Vue.component('seo-og-title', seoFacebookTitle)
+  Vue.component('seo-og-description', seoFacebookDescription)
+  Vue.component('seo-og-site-name', seoFacebookSiteName)
+  Vue.component('seo-og-image', seoFacebookImage)
+  Vue.component('seo-og-see-also', seoFacebookSeeAlso)
+  Vue.component('seo-og-url', seoFacebookUrl)
 
     // Google +
-    Vue.component('seo-google-name', seoGoogleName)
-    Vue.component('seo-google-description', seoGoogleDescription)
-    Vue.component('seo-google-image', seoGoogleImage)
+  Vue.component('seo-google-name', seoGoogleName)
+  Vue.component('seo-google-description', seoGoogleDescription)
+  Vue.component('seo-google-image', seoGoogleImage)
 
     // Twitter
-    Vue.component('seo-twitter-title', seoTwitterTitle)
-    Vue.component('seo-twitter-description', seoTwitterDescription)
-    Vue.component('seo-twitter-card', seoTwitterCard)
-    Vue.component('seo-twitter-image', seoTwitterImage)
-    Vue.component('seo-twitter-url', seoTwitterUrl)
+  Vue.component('seo-twitter-title', seoTwitterTitle)
+  Vue.component('seo-twitter-description', seoTwitterDescription)
+  Vue.component('seo-twitter-card', seoTwitterCard)
+  Vue.component('seo-twitter-image', seoTwitterImage)
+  Vue.component('seo-twitter-url', seoTwitterUrl)
 
     // Custom tags
-    Vue.component('seo-custom', seoCustom)
-
+  Vue.component('seo-custom', seoCustom)
 }
 
 // Install by default if using the script tag
