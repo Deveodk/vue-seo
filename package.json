@@ -1,6 +1,6 @@
 {
   "name": "@deveodk/vue-seo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy way to add seo to any vue based page, works without use of jquery. Based on the original idea by GuillaumeLeclerc/vue-seo",
   "author": "Jason Kelly <jk@deveo.dk>",
   "main": "dist/@deveodk/vue-seo.common.js",
@@ -8,6 +8,17 @@
   "browser": "dist/@deveodk/vue-seo.js",
   "unpkg": "dist/@deveodk/vue-seo.js",
   "style": "dist/@deveodk/vue-seo.css",
+  "keywords": [
+    "vuejs",
+    "vue",
+    "vue-component",
+    "component",
+    "deveodk",
+    "opengraph",
+    "seo",
+    "google+",
+    "twitter"
+  ],
   "files": [
     "dist",
     "src"
@@ -120,12 +131,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Deveodk/@deveodk/vue-seo.git"
+    "url": "git+https://github.com/Deveodk/vue-seo.git"
   },
   "bugs": {
-    "url": "https://github.com/Deveodk/@deveodk/vue-seo/issues"
+    "url": "https://github.com/Deveodk/vue-seo/issues"
   },
-  "homepage": "https://github.com/Deveodk/@deveodk/vue-seo#readme",
+  "homepage": "https://github.com/Deveodk/vue-seo#readme",
   "license": {
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/mit-license.php"

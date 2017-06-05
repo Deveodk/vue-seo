@@ -7,6 +7,11 @@
 
 > Easy way to add seo to any vue based page, works without use of jquery. Based on the original idea by GuillaumeLeclerc/vue-seo
 
+# Demo
+See a functioning demo
+<a href="https://packages.deveo.io/packages/vue/vue-seo">deveo demo site</a>
+
+
 ## Installation
 
 ```bash
@@ -20,20 +25,13 @@ npm install --save @deveodk/vue-seo
 ```js
 import Vue from 'vue'
 import vueSeo from '@deveodk/vue-seo'
-
 Vue.use(vueSeo)
 ```
 
 ### Browser
 
 ```html
-<!-- Include after Vue -->
-<!-- Local files -->
-<link rel="stylesheet" href="@deveodk/vue-seo/dist/@deveodk/vue-seo.css"></link>
-<script src="@deveodk/vue-seo/dist/@deveodk/vue-seo.js"></script>
-
 <!-- From CDN -->
-<link rel="stylesheet" href="https://unpkg.com/@deveodk/vue-seo/dist/@deveodk/vue-seo.css"></link>
 <script src="https://unpkg.com/@deveodk/vue-seo"></script>
 ```
 
